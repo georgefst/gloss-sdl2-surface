@@ -1,0 +1,37 @@
+name:                gloss-sdl2-surface
+version:             0.1.0.0
+git:                 "https://gitlab.com/dpwiz/gloss-sdl2-surface"
+license:             BSD3
+author:              "Alexander Bondarenko"
+maintainer:          "aenor.realm@gmail.com"
+copyright:           "2020 Alexander Bondarenko"
+
+extra-source-files:
+- README.md
+- ChangeLog.md
+
+description: Tiny wrapper to use SDL2 Surface as Gloss Bitmap.
+
+dependencies:
+- base >= 4.7 && < 5
+- gloss-rendering
+- linear
+- sdl2
+
+library:
+  source-dirs: src
+
+executables:
+  gloss-sdl2-surface-example:
+    main:                Main.hs
+    source-dirs:         app
+    ghc-options:
+    - -threaded
+    - -rtsopts
+    - -with-rtsopts=-N
+    - -with-rtsopts=-qn1
+    - -with-rtsopts=-A2m
+    dependencies:
+    - gloss
+    - gloss-sdl2-surface
+    - random
