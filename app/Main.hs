@@ -2,10 +2,10 @@
 
 module Main where
 
-import Graphics.Gloss
+import Brillo
 
 import Data.Foldable (for_)
-import Graphics.Gloss.Interface.IO.Animate (animateIO)
+import Brillo.Interface.IO.Animate (animateIO)
 import System.Random (randomRIO)
 import Control.Exception (bracket)
 import SDL.Vect (V2(..), V4(..), Point(..))

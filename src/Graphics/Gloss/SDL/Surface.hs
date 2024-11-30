@@ -14,7 +14,7 @@ import Foreign (castPtr, copyBytes, withForeignPtr, mallocForeignPtrBytes)
 import Foreign.C.Types (CInt(..))
 import Linear.V2 (V2(..))
 
-import qualified Graphics.Gloss.Rendering as Gloss
+import qualified Brillo.Rendering as Gloss
 import qualified SDL.Video.Renderer as SDL
 
 data CacheTexture
