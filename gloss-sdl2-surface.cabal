@@ -30,9 +30,9 @@ library
       src
   build-depends:
       base >=4.7 && <5
-    , gloss-rendering
-    , linear
-    , sdl2
+    , gloss-rendering >= 1.13
+    , linear >= 1.22
+    , sdl2 >= 2.5
   default-language: Haskell2010
 
 executable gloss-sdl2-surface-example
